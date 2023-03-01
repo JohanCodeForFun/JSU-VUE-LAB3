@@ -1,5 +1,6 @@
 <script setup>
     import QuizForm from '../components/QuizForm.vue'
+    import Confetti from '../components/Confetti.vue';
 </script>
 <template>
     <div class="row">
@@ -7,6 +8,7 @@
             <h1>Quiz page view</h1>
         </div>
         <QuizForm />
+        <Confetti />
     </div>
 </template>
 
