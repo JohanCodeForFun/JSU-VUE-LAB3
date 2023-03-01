@@ -80,12 +80,12 @@ D. En typ av datastruktur i Vue.js
 correct answers:  B 
  
 id: 9 
-question: Vad är en computed egenskap för en Vue.js-komponent? 
+question: Vad är en computed egenskap i en Vue.js-komponent? 
 options:  
-A. Skapad  installerad  uppdaterad  förstörd 
-B. Skapad  monterad  uppdaterad  förstörd 
-C. Skapad  monterad  uppdaterad  avmonterad 
-D. Skapad  installerad  uppdaterad  avmonterad
+A. En egenskap som lagrar statisk data
+B. En egenskap som lagrar dynamisk data som uppdateras av användaren
+C. En egenskap som beräknar värden baserat på andra egenskaper i komponenten
+D) En egenskap som hanterar händelser som utlöses av användaren
           
 correct answers:  C 
 
