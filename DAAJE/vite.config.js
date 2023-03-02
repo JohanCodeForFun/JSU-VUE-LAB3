@@ -5,11 +5,16 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   server: {
+    //add proxies to routes that must match same-origin policy
     proxy: {
       '/post': {
         target: 'http://localhost:8080/post',
         changeOrigin: true,
-      }
+      },
+      '/img': {
+        target: 'http://localhost:8080/',
+        changeOrigin: true,
+      },
     }
   }
 })

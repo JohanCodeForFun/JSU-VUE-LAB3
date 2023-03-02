@@ -303,6 +303,306 @@
             "isCorrect": false
           }
         ]
+      },
+      {
+        "id": 11,
+        "text": "Vilken av följande är en av de grundläggande byggstenarna i Vue.js?",
+        "options": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Templates",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Components",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Services",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "Controllers",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "text": "Vad kallas en funktion som används för att modifiera data i en Vue-komponent?",
+        "options": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Method",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Prop",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Watcher",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "Filter",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "text": "Vad kallas Vue.js-funktionen som används för att binda data till en DOM-attribut?",
+        "options": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "v-bind",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "v-model",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "v-for",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "v-if",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "text": "Vad är Vuex i samband med Vue.js?",
+        "options": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Ett verktyg för att skapa animationer",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Ett bibliotek för att hantera statisk data i Vue-komponenter",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "En stilguide för Vue.js",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "n ramverk för att skapa server-side rendering i Vue.js",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "text": "Vad kallas funktionen i Vue.js som används för att hantera händelser i en komponent?",
+        "options": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "v-on",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "v-bind",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "v-model",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "v-if",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "text": "Vilken av följande är ett sätt att skapa en dynamisk lista med data i Vue.js?",
+        "options": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "v-bid",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "v-model",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "v-for",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "v-if",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "text": "Vilken av följande är en av fördelarna med att använda Vue.js-komponenter?",
+        "options": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Återanvändbarhet",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Ökad prestanda",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Enkelhet",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "Inga beroenden",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "text": "Vad kallas den Vue.js-funktion som används för att hämta data från en API?",
+        "options": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Axios",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Fetch",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Ajax",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "Get",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "text": "Vilken av följande är en av fördelarna med att använda Vue.js framför andra JavaScript-ramverk?",
+        "options": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "Bättre prestanda",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "Större community",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "Mer flexibilitet",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "Enklare syntax",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "text": "Vad kallas den Vue.js-funktion som används för att skapa en observerbar variabel?",
+        "options": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "v-model",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "v-for",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "v-if",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "label": "D",
+            "text": "reactive",
+            "isCorrect": true
+          }
+        ]
       }
     ]
   },

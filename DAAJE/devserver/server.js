@@ -11,7 +11,7 @@ const proxy      = require('express-http-proxy')
 
 // all static served content declared here
 
-//app.use(express.static('*/*'));
+app.use(express.static('public'));
 
 // Proxy definition
 //app.use('/', proxy('http://127.0.0.1:5173/'));
