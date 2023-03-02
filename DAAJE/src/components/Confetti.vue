@@ -1,5 +1,5 @@
 <template>
-    <router-link to="/results"><button type="button" @click="showConfetti">Se resultatet</button></router-link>
+    <router-link to="/results" id="btn"><button type="button" @click="showConfetti">Se resultatet</button></router-link>
 </template>
 
 <script>
