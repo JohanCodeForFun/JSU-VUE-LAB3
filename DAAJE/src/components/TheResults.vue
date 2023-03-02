@@ -1,29 +1,14 @@
-<template>
-	<div class="container">
-		<div class="row">
-			<div class="col-8">
-				<h3>Medetal av svar från varje elev på Quiz</h3>
-				<canvas id="myChart"></canvas>
-			</div>
-			<div class="col-4">
-				<h3>
-					Enskilda svar av frågor:
-				</h3>
-				<p v-for="(data, index) in fetchedResultData" :key="data.id">{{ index + 1 }}, {{ data.name }}</p>
-			</div>
-		</div>
-	</div>
-</template>
-
 <script>
 import Chart from 'chart.js/auto'
-import planetChartData from '../results-data';
 
 export default {
 	name: 'TheResults',
+	props: {
+		quizLength: Number,
+		sumOfCorrectAnswers: Number
+	},
 	data() {
 		return {
-			planetChartData: planetChartData,
 			fetchedResultData: [],
 		}
 	},
@@ -37,10 +22,42 @@ export default {
 		}
 	},
 	mounted() {
-		const ctx = document.getElementById('myChart');
-		new Chart(ctx, this.planetChartData);
 		this.fetchResults();
+		const ctx = document.getElementById('myChart');
+		const MyChart = new Chart(ctx, {
+			type: "pie",
+			data: {
+				labels: ["Rätt svar", "Totala frågor"],
+				datasets: [
+					{
+						label: "Resultat av Quiz",
+						data: [this.sumOfCorrectAnswers, this.quizLength],
+						// backgroundColor: "rgba(54,73,93,.5)",
+						// borderColor: "#36495d",
+						borderWidth: 3,
+					},
+				],
+			},
+		})
+		MyChart;
 	}
 }
 
 </script>
+
+<template>
+	<div class="container">
+		<div class="row">
+			<div class="col-8">
+				<h3>Resultat av ditt quiz!</h3>
+				<canvas id="myChart"></canvas>
+			</div>
+			<div class="col-4">
+				<h3>
+					Enskilda resultat av frågor:
+				</h3>
+				<!-- <p v-for="(data, index) in fetchedResultData" :key="data.id">{{ index + 1 }}, {{ data.name }}</p> -->
+			</div>
+		</div>
+	</div>
+</template>

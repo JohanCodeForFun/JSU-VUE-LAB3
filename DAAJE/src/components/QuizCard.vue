@@ -25,6 +25,7 @@ div {
 	border: 1px solid black;
 	border-radius: 1rem;
 	padding: .5rem;
+	cursor: pointer;
 }
 
 img {

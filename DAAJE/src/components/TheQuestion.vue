@@ -1,35 +1,23 @@
-<script setup></script>
+<script setup>
+import { defineProps, defineEmits } from 'vue';
+const { question } = defineProps(['question']);
+const emit = defineEmits(['selectChoice']);
+const emitSelectedChoise = (isCorrect) => {
+	emit('selectChoice', isCorrect)
+};
+</script>
 
 <template>
 	<div class="question-container">
 		<h3 class="question">
-			Vad är Vue.js?
-			<!-- {{ question.text }} -->
+			{{ question.text }}
 		</h3>
 	</div>
 	<div class="options-container">
-		<div class="option">
-			<p class="option-label">A</p>
+		<div v-for="option in question.options" class="option" @click="emitSelectedChoise(option.isCorrect)">
+			<p class="option-label">{{ option.label }}</p>
 			<div class="option-value">
-				Svar ...
-			</div>
-		</div>
-		<div class="option">
-			<p class="option-label">B</p>
-			<div class="option-value">
-				Svar ...
-			</div>
-		</div>
-		<div class="option">
-			<p class="option-label">C</p>
-			<div class="option-value">
-				Svar ...
-			</div>
-		</div>
-		<div class="option">
-			<p class="option-label">D</p>
-			<div class="option-value">
-				Svar ...
+				{{ option.text }}
 			</div>
 		</div>
 	</div>
@@ -42,11 +30,18 @@
 
 .question {
 	margin-bottom: 1rem;
+	color: white;
+}
+
+.options-container {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	gap: 1rem 0;
 }
 
 .option {
 	display: flex;
-	margin-bottom: 1rem;
 	cursor: pointer;
 }
 
@@ -54,13 +49,15 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: rgba(128, 0, 128, 0.60);
+	background-image: linear-gradient(180deg, #5b6aac 0%, #5f0a87 84%);
+	border-radius: 5rem;
 	width: 2rem;
 	height: 2rem;
 }
 
 .option-value {
-	background-color: lightgrey;
+	border-radius: 5rem;
+	color: white;
 	width: 100%;
 	padding: 0 1rem;
 	height: 2rem;
