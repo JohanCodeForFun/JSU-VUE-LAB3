@@ -2,7 +2,6 @@
 
 import QuizForm from '../components/QuizForm.vue'
 import QuizQuestions from '../components/QuizQuestions.vue';
-import Confetti from '../components/Confetti.vue';
 
 </script>
 
@@ -16,7 +15,6 @@ import Confetti from '../components/Confetti.vue';
             </div>
         </div>
         </Suspense>
-        <Confetti />
 </template>
 
 <style scoped>

@@ -1,5 +1,8 @@
 <template>
-    <router-link to="/results" id="btn"><button type="button" @click="showConfetti">Se resultatet</button></router-link>
+    <div id="rsltBtn">
+        <router-link to="/results" id="btn"><button type="button" @click="showConfetti">Se resultatet</button></router-link>
+    </div>
+
 </template>
 
 <script>
@@ -9,14 +12,14 @@
         name: 'Confetti',
         data() {
             return {
-                result: 10
+                //
             }
         },
 
         methods: {
             showConfetti() {
                 const jsConfetti = new JSConfetti()
-                if (this.result >= 10) {
+                if (this.sumOfCorrectAnswers >= 8) {
                     jsConfetti.addConfetti({
                         confettiRadius: 5,
                         confettiColors: [
@@ -40,4 +43,9 @@
     }
 </script>
 
-<style></style>
+<style>
+#rsltBtn{
+    display: flex;
+    justify-content: center;
+}
+</style>
