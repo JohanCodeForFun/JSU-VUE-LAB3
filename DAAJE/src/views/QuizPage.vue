@@ -1,6 +1,8 @@
 <script setup>
+
 import QuizForm from '../components/QuizForm.vue'
 import QuizQuestions from '../components/QuizQuestions.vue';
+
 </script>
 
 <template>
@@ -12,7 +14,7 @@ import QuizQuestions from '../components/QuizQuestions.vue';
                 <QuizForm />
             </div>
         </div>
-    </Suspense>
+        </Suspense>
 </template>
 
 <style scoped>

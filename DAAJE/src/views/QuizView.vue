@@ -4,6 +4,7 @@ import { ref, computed } from 'vue';
 import TheQuestion from '../components/TheQuestion.vue';
 import TheResults from '../components/TheResults.vue';
 import QuizHeader from '../components/QuizHeader.vue';
+import Confetti from '../components/Confetti.vue';
 import axios from 'axios';
 
 const currentQuestionIndex = ref(0);
@@ -42,4 +43,5 @@ const onChoiceSelected = (isCorrect) => {
 			<TheResults v-else :quizLength="quizToShow.questions.length" :sumOfCorrectAnswers="sumOfCorrectAnswers" />
 		</div>
 	</div>
+    <Confetti v-if="showResults.value == true"/> //vet ej om v if funkar
 </template>
