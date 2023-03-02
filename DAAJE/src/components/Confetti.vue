@@ -1,5 +1,5 @@
 <template>
-    <div id="rsltBtn">
+    <div id="rsltBtn"> 
         <router-link to="/results" id="btn"><button type="button" @click="showConfetti">Se resultatet</button></router-link>
     </div>
 
@@ -19,7 +19,7 @@
         methods: {
             showConfetti() {
                 const jsConfetti = new JSConfetti()
-                if (this.sumOfCorrectAnswers >= 8) {
+                if (this.sumOfCorrectAnswers >= 8) { //kanske lägga till procenvis istället för statisk 8
                     jsConfetti.addConfetti({
                         confettiRadius: 5,
                         confettiColors: [
@@ -32,7 +32,7 @@
                         confettiNumber: 500,
                     })
                 } else {
-                    jsConfetti.addConfetti({
+                    jsConfetti.addConfetti({ //kanske lägga till procenvis istället för statiskt
                         emojis: ['😢'],
                         emojiSize: 40,
                         confettiNumber: 50,

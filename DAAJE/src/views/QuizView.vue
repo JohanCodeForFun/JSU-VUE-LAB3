@@ -43,5 +43,5 @@ const onChoiceSelected = (isCorrect) => {
 			<TheResults v-else :quizLength="quizToShow.questions.length" :sumOfCorrectAnswers="sumOfCorrectAnswers" />
 		</div>
 	</div>
-    <Confetti v-if="showResults.value == true"/>
+    <Confetti v-if="showResults.value == true"/> //vet ej om v if funkar
 </template>
